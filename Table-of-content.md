@@ -30,7 +30,7 @@
 
 - Erreurs humaines
 
-Quelle est l'importance de la fiabilité ?
+- Quelle est l'importance de la fiabilité ?
 
 #### Évolutivité
 
