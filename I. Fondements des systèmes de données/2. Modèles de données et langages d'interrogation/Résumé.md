@@ -19,21 +19,3 @@ Bien que nous ayons couvert beaucoup de terrain, de nombreux modèles de donnée
 - La recherche en texte intégral est sans doute un type de modèle de données fréquemment utilisé parallèlement aux bases de données. La recherche d'informations est un vaste sujet spécialisé que nous ne couvrirons pas en détail dans ce livre, mais nous aborderons les index de recherche au chapitre 3 et dans la partie III.
 
 Nous devons en rester là pour l'instant. Dans le prochain chapitre, nous aborderons certains des compromis qui entrent en jeu lors de la mise en œuvre des modèles de données décrits dans ce chapitre. 
-
-**Notes de bas de page**
-
-i Terme emprunté à l'électronique. Chaque circuit électrique possède une certaine impédance (résistance au courant alternatif) sur ses entrées et ses sorties. Lorsque vous connectez la sortie d'un circuit à l'entrée d'un autre, le transfert de puissance à travers la connexion est maximisé si les impédances de sortie et d'entrée des deux circuits correspondent. Une désadaptation d'impédance peut entraîner des réflexions de signal et d'autres problèmes.
-
-ii La littérature sur le modèle relationnel distingue plusieurs formes normales différentes, mais ces distinctions ne présentent guère d'intérêt pratique. En règle générale, si vous dupliquez des valeurs qui pourraient être stockées à un seul endroit, le schéma n'est pas normalisé.
-
-iii Au moment de la rédaction du présent document, les jointures sont prises en charge par RethinkDB, mais pas par MongoDB, et uniquement par CouchDB dans les vues prédéfinies.
-
-iv Les contraintes de clé étrangère permettent de restreindre les modifications, mais ces contraintes ne sont pas requises par le modèle relationnel. Même avec des contraintes, les jointures sur les clés étrangères sont effectuées au moment de la requête, alors que dans CODASYL, la jointure était effectivement effectuée au moment de l'insertion.
-
-v La description originale du modèle relationnel de Codd [1] permettait en fait quelque chose de très similaire aux documents JSON dans un schéma relationnel. Il appelait cela des domaines non simples. L'idée était qu'une valeur dans une ligne ne devait pas seulement être un type de données primitif comme un nombre ou une chaîne de caractères, mais pouvait également être une relation imbriquée (table) - vous pouvez donc avoir une structure arborescente arbitrairement imbriquée comme valeur, un peu comme le support JSON ou XML qui a été ajouté à SQL plus de 30 ans plus tard.
-
-vi IMS et CODASYL utilisaient tous deux des API d'interrogation impérative. Les applications utilisaient généralement du code COBOL pour itérer sur les enregistrements de la base de données, un enregistrement à la fois [2, 16].
-
-vii Techniquement, Datomic utilise des 5-tuples plutôt que des triples ; les deux champs supplémentaires sont des métadonnées pour la gestion des versions.
-
-viii Datomic et Cascalog utilisent une syntaxe d'expression S de Clojure pour Datalog. Dans les exemples suivants, nous utilisons une syntaxe Prolog, qui est un peu plus facile à lire, mais cela ne fait aucune différence fonctionnelle.

@@ -23,20 +23,3 @@ Nous avons également discuté de plusieurs modes de flux de données, illustran
 - Le passage asynchrone de messages (à l'aide de courtiers en messages ou d'acteurs), où les nœuds communiquent en s'envoyant des messages codés par l'expéditeur et décodés par le destinataire.
 
 Nous pouvons conclure qu'avec un peu d'attention, la compatibilité amont/aval et les mises à jour permanentes sont tout à fait réalisables. Que l'évolution de votre application soit rapide et que vos déploiements soient fréquents.
-
-**Notes de bas de page**
-
-i À l'exception de certains cas particuliers, comme certains fichiers à mémoire partagée ou lorsque l'on opère directement sur des données compressées (comme décrit dans "Compression de colonnes").
-
-ii Notez que le codage n'a rien à voir avec le cryptage. Nous n'abordons pas le cryptage dans ce livre.
-
-iii En fait, il en a trois - BinaryProtocol, CompactProtocol et DenseProtocol - bien que DenseProtocol ne soit supporté que par l'implémentation C++, il ne compte donc pas comme inter-langage [18]. En outre, il dispose également de deux formats d'encodage différents basés sur JSON [19]. Quel plaisir !
-
-iv Pour être précis, la valeur par défaut doit être du type de la première branche de l'union, bien que ce soit une limitation spécifique d'Avro, et non une caractéristique générale des types d'union.
-
-v À l'exception de MySQL, qui réécrit souvent une table entière même si cela n'est pas strictement nécessaire, comme mentionné dans "Schema flexibility in the document model".
-
-vi Même au sein de chaque camp, les arguments ne manquent pas. Par exemple, HATEOAS (hypermédia comme moteur de l'état des applications), provoque souvent des discussions [35].
-
-vii Malgré la similitude des acronymes, SOAP n'est pas une exigence de l'AOS. SOAP est une technologie particulière, alors que la SOA est une approche générale de la construction de systèmes.
-

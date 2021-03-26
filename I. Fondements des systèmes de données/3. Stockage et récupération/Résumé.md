@@ -21,13 +21,3 @@ Nous avons ensuite fait un détour par l'intérieur des moteurs de stockage pour
 En tant que développeur d'applications, si vous êtes armé de ces connaissances sur les aspects internes des moteurs de stockage, vous êtes bien mieux placé pour savoir quel outil est le mieux adapté à votre application particulière. Si vous devez ajuster les paramètres de réglage d'une base de données, cette compréhension vous permet d'imaginer l'effet d'une valeur supérieure ou inférieure.
 
 Bien que ce chapitre n'ait pas pu faire de vous un expert du réglage d'un moteur de stockage particulier, il vous a doté d'un vocabulaire et d'idées suffisants pour vous permettre de comprendre la documentation de la base de données de votre choix. 
-
-**Notes de bas de page**
-
-i Si toutes les clés et valeurs avaient une taille fixe, vous pourriez utiliser la recherche binaire sur un fichier de segments et éviter complètement l'index en mémoire. Cependant, dans la pratique, ils sont généralement de longueur variable, ce qui rend difficile de savoir où se termine un enregistrement et où commence le suivant si vous n'avez pas d'index.
-
-ii L'insertion d'une nouvelle clé dans un B-tree est raisonnablement intuitive, mais la suppression d'une clé (tout en maintenant l'équilibre de l'arbre) est un peu plus complexe [2].
-
-iii Cette variante est parfois connue sous le nom d'arbre B+, bien que l'optimisation soit si courante qu'elle n'est souvent pas distinguée des autres variantes d'arbre B.
-
-iv La signification de online dans OLAP n'est pas claire ; elle fait probablement référence au fait que les requêtes ne sont pas seulement destinées à des rapports prédéfinis, mais que les analystes utilisent le système OLAP de manière interactive pour des requêtes exploratoires.

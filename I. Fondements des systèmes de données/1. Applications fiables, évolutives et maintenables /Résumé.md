@@ -13,12 +13,3 @@ Pour être utile, une application doit répondre à plusieurs exigences. Il exis
 Il n'existe malheureusement pas de solution miracle pour rendre les applications fiables, évolutives ou faciles à maintenir. Cependant, il existe certains modèles et techniques qui réapparaissent constamment dans différents types d'applications. Dans les prochains chapitres, nous examinerons quelques exemples de systèmes de données et nous analyserons comment ils atteignent ces objectifs.
 
 Plus tard dans le livre, dans la partie III, nous examinerons les modèles pour les systèmes qui consistent en plusieurs composants travaillant ensemble, comme celui de la Figure 1-1.
-
-**Notes de bas de page**
-
-i Défini dans "Approches pour faire face à la charge".
-
-ii Terme emprunté à l'ingénierie électronique, où il décrit le nombre d'entrées de portes logiques qui sont reliées à la sortie d'une autre porte. La sortie doit fournir suffisamment de courant pour piloter toutes les entrées attachées. Dans les systèmes de traitement des transactions, nous l'utilisons pour décrire le nombre de demandes à d'autres services que nous devons faire pour répondre à une demande entrante.
-
-iii Dans un monde idéal, le temps d'exécution d'un travail par lots correspond à la taille de l'ensemble de données divisée par le débit. Dans la pratique, le temps d'exécution est souvent plus long, en raison de l'asymétrie (les données ne sont pas réparties uniformément entre les processus de travail) et de la nécessité d'attendre que la tâche la plus lente se termine.
-
