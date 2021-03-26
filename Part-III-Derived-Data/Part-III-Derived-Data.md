@@ -1,0 +1,7 @@
+# Partie III. Données dérivées
+
+Dans les parties I et II de ce livre, nous avons rassemblé à partir de la base toutes les considérations majeures qui entrent en jeu dans une base de données distribuée, depuis la disposition des données sur le disque jusqu'aux limites de la cohérence distribuée en présence de fautes. Cependant, cette discussion a supposé qu'il n'y avait qu'une seule base de données dans l'application.
+
+En réalité, les systèmes de données sont souvent plus complexes. Dans une grande application, il est souvent nécessaire de pouvoir accéder aux données et de les traiter de nombreuses manières différentes, et il n'existe pas de base de données unique capable de satisfaire tous ces besoins simultanément. Les applications utilisent donc couramment une combinaison de plusieurs magasins de données différents, d'index, de caches, de systèmes analytiques, etc. et mettent en œuvre des mécanismes pour déplacer les données d'un magasin à l'autre.
+
+Dans cette dernière partie du livre, nous examinerons les problèmes liés à l'intégration de plusieurs systèmes de données différents, potentiellement avec des modèles de données différents et optimisés pour des schémas d'accès différents, dans une architecture d'application cohérente. Cet aspect de la création de systèmes est souvent négligé par les fournisseurs qui prétendent que leur produit peut satisfaire tous vos besoins. En réalité, l'intégration de systèmes disparates est l'une des choses les plus importantes à faire dans une application non triviale.
